@@ -1,0 +1,75 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>CSS lesson - 09</title>
+        <style>
+            #p1 {
+                width: 300px;
+                background-color: grey;
+                padding: 30px;
+                border: dashed 5px black;
+                background-clip: content-box;
+                /*
+                background-clip: border-box;
+                background-clip: padding-box;
+                background-clip: content-box;
+                */
+            }
+            #p2 {
+                width: 300px;
+                background-image: url(images/image.PNG);
+                background-repeat: no-repeat;
+                padding: 30px;
+                border: dashed 5px black;
+                background-origin: content-box;
+                /*
+                background-origin: border-box;
+                background-origin: padding-box;
+                background-origin: content-box;
+                */
+                /*
+                background-clip: border-box;
+                background-clip: padding-box;
+                background-clip: content-box;
+                */
+            }
+            #p3 {
+                width: 300px;
+                background-image: url(images/image.PNG);
+                background-repeat: no-repeat;
+                padding: 50px;
+                border: dashed 5px black;
+                background-size: cover;
+                /*
+                background-size: 50px 70px;
+                background-size: 80%;
+                background-size: contain;
+                background-size: cover;
+                */
+            }
+            #p4 {
+                width: 300px;
+                background-image: url(images/image.PNG), url(images/image2.PNG);
+                background-repeat: no-repeat;
+                padding: 50px;
+                border: dashed 5px black;
+                /*
+                background-size: 50px 70px;
+                background-size: 80%;
+                background-size: contain;
+                background-size: cover;
+                */
+            }
+        </style>
+    </head>
+    <body>
+        <p id="p1">Faradars CSS video tutorial.<br>With this Tutorial you can learn css3</p>
+        <hr>
+        <p id="p2">Faradars CSS video tutorial.<br>With this Tutorial you can learn css3</p>
+        <hr>
+        <p id="p3">Faradars CSS video tutorial.<br>With this Tutorial you can learn css3</p>
+        <hr>
+        <p id="p4">Faradars CSS video tutorial.<br>With this Tutorial you can learn css3</p>
+        <hr>
+    </body>
+</html>

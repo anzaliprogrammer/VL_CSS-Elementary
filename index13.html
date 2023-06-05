@@ -1,0 +1,75 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>CSS lesson - 13</title>
+        <style>
+            #div1 {
+                width: 150px;
+                height: 50px;
+                background: blue;
+                appearance: button;
+            }
+            div.container {
+                width: 500px;
+                border: 2px solid black;
+            }
+            div.box {
+                box-sizing: content-box;
+                -moz-box-sizing: content-box;
+                width: 50%;
+                border: 3px solid red;
+                float: left;
+                /*
+                box-sizing: border-box;
+                -moz-box-sizing: border-box;
+                */
+            }
+            #div4 {
+                margin: 150px;
+                width: 150px;
+                padding: 100px;
+                border: 12px solid black;
+                outline: 15px solid red;
+                outline-offset: 50px;
+            }
+
+            .resz {
+                padding: 10px 40px;
+                width: 300px;
+                height: 100px;
+                overflow: auto;
+            }
+            #div5 {
+                border: 2px solid red;
+                resize: none;
+            }
+            #div6 {
+                border: 2px solid blue;
+                resize: both;
+            }
+            #div7 {
+                border: 2px solid orange;
+                resize: vertical;
+            }
+            #div8 {
+                border: 2px solid green;
+                resize: horizontal;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="div1">Faradars 1</div>
+        <hr>
+        <div class="container">
+            <div class="box" id="div2">Faradars 2</div>
+            <div class="box" id="div3">Faradars 3</div>
+        </div>
+        <hr>
+        <div id="div4">Faradars 4</div>
+        <hr>
+        <div class="resz" id="div5">Faradars 5</div>
+        <div class="resz" id="div6">Faradars 5</div>
+        <div class="resz" id="div7">Faradars 5</div>
+        <div class="resz" id="div8">Faradars 5</div>
+    </body>
+</html>

@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>CSS lesson - 10</title>
+        <style>
+            p {
+                width: 300px;
+                background-color: grey;
+                padding: 10px;
+                border: dashed 5px black;
+            }
+            #p1 {
+                /*
+                transform: translate();
+                transform: rotate();
+                transform: scale();
+                transform: skew();
+                -moz-transform: translate();
+                -o-transform: translate();
+                -ms-transform: translate();
+                -webkit-transform: translate();
+
+                -moz-transform: translate(30px, 30px);
+                -moz-transform: rotate(45deg);
+                -moz-transform: scale(250%,30%);
+                -moz-transform: skew(10deg,30deg);
+                */
+            }
+            #p2 {
+            }
+        </style>
+    </head>
+    <body>
+        <p id="p1">Faradars CSS video tutorial.</p>
+        <hr>
+        <button onclick="fdFunction()">Rotate</button>
+        <p id="p2">Faradars CSS video tutorial.</p>
+        <hr>
+
+        <script>
+            function fdFunction() {
+                document.getElementById("p2").style.transform = "rotate(30deg)";
+            }
+        </script>
+    </body>
+</html>

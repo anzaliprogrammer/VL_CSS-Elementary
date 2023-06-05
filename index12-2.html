@@ -1,0 +1,117 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>CSS lesson - 12-2</title>
+        <style>
+            #div1 {
+                width: 250px;
+                height: 250px;
+                background-color: blue;
+                animation: FDFrame 5s;
+                -moz-animation: FDFrame 5s;
+                -webkit-animation: FDFrame 5s;
+            }
+            #div2 {
+                width: 250px;
+                height: 250px;
+                background-color: blue;
+                animation: FDMove 7s;
+                -moz-animation: FDMove 7s;
+                -webkit-animation: FDMove 7s;
+            }
+            #div3 {
+                width: 250px;
+                height: 250px;
+                position: relative;
+                animation: FDAction 10s;
+                -moz-animation: FDAction 10s;
+                -webkit-animation: FDAction 10s;
+                animation-iteration-count: infinite;
+                /*
+                animation-play-state: running | paused;
+                */
+            }
+
+            @keyframes FDFrame {
+                from {
+                    background: red;
+
+                }
+                to {
+                    background: yellow;
+                }
+            }
+            @-moz-keyframes FDFrame {
+                from {
+                    background: red;
+
+                }
+                to {
+                    background: yellow;
+                }
+            }
+            @-webkit-keyframes FDFrame {
+                from {
+                    background: red;
+
+                }
+                to {
+                    background: yellow;
+                }
+            }
+
+            @keyframes FDMove {
+                from {
+                    width: 100px;
+                    left: 0px;
+                    top: 0px;
+                }
+                to {
+                    width: 300px;
+                    left: 200px;
+                    top: 200px;
+                }
+            }
+            @-moz-keyframes FDMove {
+                from {
+                    width: 100px;
+                    left: 0px;
+                    top: 0px;
+                }
+                to {
+                    width: 300px;
+                    left: 200px;
+                    top: 200px;
+                }
+            }
+            @-webkit-keyframes FDMove {
+                from {
+                    width: 100px;
+                    left: 0px;
+                    top: 0px;
+                }
+                to {
+                    width: 300px;
+                    left: 200px;
+                    top: 200px;
+                }
+            }
+
+            @keyframes FDAction {
+                0% {background: red; left: 0px; top:0px;}
+                25% {background: yellow; left: 200px; top:0px;}
+                50% {background: green; left: 200px; top:200px;}
+                75% {background: blue; left: 0px; top:200px;}
+                100% {background: red; left: 0px; top:0px;}
+            }
+
+        </style>
+    </head>
+    <body>
+        <div id="div1">Faradars CSS video tutorial.</div>
+        <hr>
+        <div id="div2">Faradars CSS video tutorial.</div>
+        <hr>
+        <div id="div3">Faradars CSS video tutorial.</div>
+    </body>
+</html>
